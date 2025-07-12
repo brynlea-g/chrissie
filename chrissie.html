@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chrissie's Hens Weekend - Scavenger Hunt</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/watercolor.png');
+    background-repeat: repeat;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  h1, h2 {
+    color: #87CEEB; /* Pastel Blue */
+    text-align: center;
+    font-family: 'Lucida Handwriting', cursive;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    border-bottom: 2px solid #87CEEB;
+    padding-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    background-color: #f0f8ff; /* Alice Blue - a very light pastel blue */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  input[type="checkbox"] {
+    margin-right: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #87CEEB;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  input[type="checkbox"]:checked {
+    background-color: #87CEEB;
+  }
+  input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Checkmark */
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  label {
+    flex-grow: 1;
+  }
+  .map-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .map-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #87CEEB;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Chrissie's Hens Weekend</h1>
+  <h2>Scavenger Hunt Challenge</h2>
+
+  <div class="map-container">
+    <img src="map.png" alt="Map of Coolangatta and Tweed Heads">
+  </div>
+
+  <h2>Photo/Video Challenges:</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="challenge1">
+      <label for="challenge1">Take a selfie with a lifeguard</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge2">
+      <label for="challenge2">Pose like a synchronised swim team on the beach</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge3">
+      <label for="challenge3">Spell out Chrissie’s name using body shapes or signs</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge4">
+      <label for="challenge4">Get a stranger to propose to someone on your team</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge5">
+      <label for="challenge5">Find someone with the name Tim and take a photo with them</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge6">
+      <label for="challenge6">Take a team photo with something blue (can’t be owned by any team members)</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge7">
+      <label for="challenge7">Find a “Just Married” sign or something wedding-themed and pose with it</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge8">
+      <label for="challenge8">Make a 10-second dance video in front of a landmark</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge9">
+      <label for="challenge9">Take a photo with a dog (bonus points if Chrissie thinks it’s the cutest one)</label>
+    </li>
+    <li>
+      <input type="checkbox" id="challenge10">
+      <label for="challenge10">Recreate the cover of a famous rom-com movie poster</label>
+    </li>
+  </ul>
+
+  <h2>Find & Collect (minimal items):</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="collect1">
+      <label for="collect1">A napkin with a bar’s logo</label>
+    </li>
+    <li>
+      <input type="checkbox" id="collect2">
+      <label for="collect2">A flower you think Chrissie would like</label>
+    </li>
+    <li>
+      <input type="checkbox" id="collect3">
+      <label for="collect3">Collect something that is from NSW</label>
+    </li>
+    <li>
+      <input type="checkbox" id="collect4">
+      <label for="collect4">A free brochure or flyer from a local business</label>
+    </li>
+    <li>
+      <input type="checkbox" id="collect5">
+      <label for="collect5">A shell or unique rock from the beach</label>
+    </li>
+  </ul>
+
+  <h2>Interaction/Task Challenges:</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="task1">
+      <label for="task1">Ask a stranger for marriage advice and record it</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task2">
+      <label for="task2">Get someone to write a wedding tip in your phone’s notes app</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task3">
+      <label for="task3">Make a short toast to Chrissie in a public place</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task4">
+      <label for="task4">Serenade someone with a love song</label>
+    </li>
+    <li>
+      <input type="checkbox" id="task5">
+      <label for="task5">Start a mini conga line with at least one stranger</label>
+    </li>
+  </ul>
+
+</div>
+
+</body>
+</html>
